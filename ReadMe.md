@@ -22,7 +22,8 @@ You will also need to install a recent version of [CMake](https://cmake.org/down
 
 ## Building
 
-1. Clone the *min-starter* template from GitHub. **Yyou should clone it into Max's Packages folder**. If you clone it elsewhere you will need to make an alias to it in your Packages folder.
+0. Select "Use this template" and set up your own repository.
+1. Clone your new repository. **You should clone it into Max's Packages folder**. If you clone it elsewhere you will need to make an alias to it in your Packages folder.
    The *Packages* folder can be found inside of your *Max 8* folder which is inside of your user's *Documents* folder.
    Make sure you clone recursively so that all sub-modules are properly initiated : `git clone https://github.com/Cycling74/min-devkit.git --recursive`
 2. In the Terminal or Console app of your choice, change directories (cd) into the min-starter folder you cloned/installed in step 0.
