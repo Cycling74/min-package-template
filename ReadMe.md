@@ -25,7 +25,7 @@ You will also need to install a recent version of [CMake](https://cmake.org/down
 0. Select "Use this template" and set up your own repository.
 1. Clone your new repository. **You should clone it into Max's Packages folder**. If you clone it elsewhere you will need to make an alias to it in your Packages folder.
    The *Packages* folder can be found inside of your *Max 8* folder which is inside of your user's *Documents* folder.
-   Make sure you clone recursively so that all sub-modules are properly initiated : `git clone https://github.com/Cycling74/min-devkit.git --recursive`
+   Make sure you clone recursively so that all sub-modules are properly initiated : `git clone <your repository> --recursive`
 2. In the Terminal or Console app of your choice, change directories (cd) into the min-starter folder you cloned/installed in step 0.
 3. `mkdir build` to create a folder with your various build files
 4. `cd build` to put yourself into that folder
@@ -91,7 +91,6 @@ The min-starter project models CI using [Github Actions](https://docs.github.com
 ## Contributors / Acknowledgements
 
 * See the [GitHub Contributor Graph](https://github.com/Cycling74/min-api/graphs/contributors) for the API
-* See the [GitHub Contributor Graph](https://github.com/Cycling74/min-devkit/graphs/contributors) for the DevKit
 
 ## Support
 
