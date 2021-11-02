@@ -1,11 +1,10 @@
-# min-starter
-![CI](https://github.com/Cycling74/min-starter/workflows/CI/badge.svg)
+# min-package-template
 
 Minimal template for creating a package with the min-api.
 
 ## Structure
 
-* `min-starter` is a minimal template version of the Min-DevKit package to get started following current best-practices for package creation.
+* `min-package-template` is a minimal template version of the Min-DevKit package to get started following current best-practices for package creation.
 * `min-api` is a folder within the devkit containing all of the support files you will need to compile an external object written in modern C++.  This folder you will include in your own package's source folder.
 * `min-lib` contains building blocks, helper classes, and unit generators that may be useful in authoring  C++ code for audio, video, and data processing.
 
