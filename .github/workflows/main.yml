@@ -12,7 +12,7 @@ jobs:
         config: [debug, release]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         submodules: 'recursive'
         fetch-depth: '0'
@@ -87,10 +87,10 @@ jobs:
       run: |
         set PACKAGE_NAME=%GITHUB_REPOSITORY_NAME%
         mkdir %PACKAGE_NAME%
-        if exist eatensions cp -a extensions %PACKAGE_NAME%
-        if exist eaternals cp -a externals %PACKAGE_NAME%
-        if exist sapport cp -a support %PACKAGE_NAME%
-        if exist tasts cp -a tests %PACKAGE_NAME%
+        if exist extensions cp -a extensions %PACKAGE_NAME%
+        if exist externals cp -a externals %PACKAGE_NAME%
+        if exist support cp -a support %PACKAGE_NAME%
+        if exist tests cp -a tests %PACKAGE_NAME%
         
     - uses: actions/upload-artifact@v4
       with:
@@ -103,7 +103,7 @@ jobs:
     if: ${{ contains( github.ref, 'refs/tags/' ) }}
 
     steps:
-    - uses: benjlevesque/short-sha@v1.1
+    - uses: benjlevesque/short-sha@v1.2
       id: short-sha
       with:
         length: 7
@@ -125,7 +125,7 @@ jobs:
     - name: zip
       run: zip -r ${{ github.event.repository.name }}-package-for-max-${{ steps.short-sha.outputs.sha }}.zip ${{ github.event.repository.name }}
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v4
       with:
         name: ${{ github.event.repository.name }}-${{ steps.short-sha.outputs.sha }}-zipped-release
         path: ${{ github.event.repository.name }}-package-for-max-${{ steps.short-sha.outputs.sha }}.zip
