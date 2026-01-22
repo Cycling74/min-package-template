@@ -3,7 +3,7 @@
 	"description" : "Lightweight reference implementation of a package built using the Min-API.",
 	"homepatcher" : "",
 	"max_version_min" : "8.0", "max_version_max" : "none",
-	"name" : "@C74_PACKAGE_NAME@",
+	"name" : "Min Package Template",
 	"os" : {
 		"macintosh" : {
 			"platform" : [ "x64" ],
@@ -19,6 +19,6 @@
 		"copyright" : "Copyright (c) 2018 Cycling '74"
 	},
 	"tags" : [ ],
-	"version" : "@GIT_VERSION_MAJ@.@GIT_VERSION_MIN@.@GIT_VERSION_SUB@",
+	"version" : "0.1.0",
 	"website" : "http://www.github.com/Cycling74/min-devkit"
 }

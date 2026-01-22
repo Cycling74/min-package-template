@@ -15,5 +15,4 @@ tests
 tmp
 .DS_Store
 .vs
-package-info.json
 
